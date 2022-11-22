@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      id="metaname"
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="head">
+        <h2>management</h2>
+        <p>product management system</p>
+      </div>
+      <div class="inputs">
+        <input type="text" id="title" placeholder="title" />
+        <div class="price">
+          <input
+            onkeyup="getsum()"
+            type="number"
+            id="price"
+            placeholder="price"
+          />
+          <input
+            onkeyup="getsum()"
+            type="number"
+            id="taxes"
+            placeholder="taxes"
+          />
+          <input onkeyup="getsum()" type="number" id="ads" placeholder="ads" />
+          <input
+            onkeyup="getsum()"
+            type="number"
+            id="discount"
+            placeholder="discount"
+          />
+          <small id="total"> </small>
+
+          <input type="number" id="count" placeholder="count" />
+          <input type="text" id="category" placeholder="category" />
+          <button id="submit">create</button>
+          <div id="deleteall"></div>
+        </div>
+      </div>
+      <div class="outputs">
+        <div class="searchblock">
+          <input
+            onkeyup="searchdata(this.value)"
+            type="text"
+            id="search"
+            placeholder="search"
+          />
+          <div class="btnsearch">
+            <button onclick="getsearchmood(this.id)" id="searchtitle">
+              search by title
+            </button>
+            <button onclick="getsearchmood(this.id)" id="searchcategory">
+              search by category
+            </button>
+          </div>
+        </div>
+        <table>
+          <tr>
+            <th>id</th>
+            <th>title</th>
+            <th>price</th>
+            <th>taxes</th>
+            <th>ads</th>
+            <th>discount</th>
+            <th>total</th>
+            <th>category</th>
+            <th>update</th>
+            <th>delete</th>
+          </tr>
+          <tbody id="tbody"></tbody>
+        </table>
+      </div>
+    </div>
+    <ul>
+      <li data-color="red" class="active"></li>
+      <li data-color="black"></li>
+      <li data-color="blue"></li>
+      <li data-color="green"></li>
+    </ul>
+    <span class="main"></span>
+
+    <!--  
+<label> user name</label>
+<input class="user" type="text" required placeholder="ahmad@gmail.com">
+<br>
+<br>
+<label>password</label>
+<input class="pass" type="password" required placeholder="***********">
+<br>
+<br>
+<button onclick="adder()" class="butt" type="button">signup</button>
+<button onclick="check()"> signIn </button> -->
+    <script src="design.js"></script>
+  </body>
+</html>

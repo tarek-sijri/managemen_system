@@ -1,0 +1,12 @@
+//import say,{generatorall,generatorletters,generatornums,gen as generator} from "./design.js";
+//import * as all from "./design.js";
+// console.log(all);
+// console.log(all.gen.next());
+// console.log(all.gen.next());
+// console.log(all.gen.next());
+// console.log(all.gen.next());
+// console.log(all.gen.next());
+// console.log(all.gen.next());
+// console.log(all.gen.next());
+// console.log(all.gen.next());
+// console.log(all.gen.next());
