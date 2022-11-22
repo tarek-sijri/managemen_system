@@ -1,2 +1,0 @@
-# managemen_system
-manage
